@@ -1,0 +1,6 @@
+@import "../../functions/index.scss";
+@import "../../typography/index.scss";
+
+@mixin fonts {
+  --weather-font: "TT Norms", Arial, sans-serif;
+}

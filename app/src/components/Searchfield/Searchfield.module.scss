@@ -1,0 +1,11 @@
+@import "../../assets/functions";
+
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.searchField {
+  margin-right: pxToRem(15);
+  flex: 1;
+}

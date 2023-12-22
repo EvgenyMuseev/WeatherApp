@@ -1,0 +1,1 @@
+export { RainfallPic } from "./RainfallPic";

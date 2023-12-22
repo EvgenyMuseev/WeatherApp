@@ -1,0 +1,1 @@
+export { StormPic } from "./StormPic";

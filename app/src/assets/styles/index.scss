@@ -1,0 +1,35 @@
+@import "./variables";
+
+:root {
+  @include colorsPalette;
+  @include fonts;
+}
+
+body {
+  font-family: var(--weather-font);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}

@@ -1,0 +1,29 @@
+@import "../../../assets/functions";
+
+.button {
+  width: pxToRem(68);
+  height: pxToRem(68);
+  border-radius: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: rgb(var(--weather-secondary-color));
+  color: rgb(var(--weather-light-color));
+  transition: all 0.2s;
+
+  svg {
+    transition: all 0.2s;
+  }
+  
+  &:hover {
+    background: darken(#FFBA24, 5%);
+    svg {
+      scale: 1.15;
+    }
+  }
+
+}

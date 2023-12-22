@@ -1,0 +1,1 @@
+export { WindIcon } from "./WindIcon";
