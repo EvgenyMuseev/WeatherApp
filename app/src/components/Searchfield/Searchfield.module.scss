@@ -6,6 +6,9 @@
 }
 
 .searchField {
-  margin-right: pxToRem(15);
   flex: 1;
+}
+
+.searchButton {
+  margin-left: pxToRem(15);
 }

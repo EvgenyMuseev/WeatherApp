@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import styles from "./WeatherWidget.module.scss";
 import { WeatherBlock } from "../WeatherBlock";
-import { Textfield } from "../Textfield";
 import { Container } from "../Container";
 
 interface WeatherWidgetProps {

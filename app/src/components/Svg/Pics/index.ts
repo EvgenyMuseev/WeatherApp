@@ -5,3 +5,5 @@ export { StormPic } from "./StormPic";
 export { ThundershormPic } from "./ThundershormPic";
 export { RainfallPic } from "./RainfallPic";
 export { FreezingPic } from "./FreezingPic";
+export { OvercastCloudsPic } from "./OvercastCloudsPic";
+export { NotFoundPic } from "./NotFoundPic";

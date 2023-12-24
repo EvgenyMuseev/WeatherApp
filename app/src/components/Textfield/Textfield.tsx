@@ -1,11 +1,13 @@
-import { ReactNode } from "react";
+import { ReactNode, ChangeEvent } from "react";
 import classNames from "classnames";
 import styles from "./Textfield.module.scss";
 
 interface TextfieldProps {
   className?: string;
-  onChange?: () => void;
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
+  onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
   onBlur?: () => void;
+  value?: string;
   placeholder?: string;
   error?: boolean;
   helperText?: string;
@@ -16,8 +18,10 @@ interface TextfieldProps {
 
 export const Textfield = ({
   className,
-  onChange = () => {},
+  onChange,
+  onKeyDown,
   onBlur = () => {},
+  value,
   placeholder,
   error = false,
   helperText,
@@ -29,6 +33,9 @@ export const Textfield = ({
     <div className={classNames(styles.textfieldWrapper, className)}>
       {startIcon}
       <input
+        onKeyDown={onKeyDown}
+        onBlur={onBlur}
+        value={value}
         type={type}
         className={classNames(styles.textfield, {
           [styles.textfieldError]: error,

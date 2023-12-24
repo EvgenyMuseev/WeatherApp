@@ -23,7 +23,7 @@ export const FreezingPic = (props: SVGProps<SVGSVGElement>) => (
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#28CBE9"></stop>
-        <stop offset="1" stopColor="#0A4FBB"></stop>
+        <stop offset="1" stopColor="#FBFBFB"></stop>
       </radialGradient>
     </defs>
   </svg>

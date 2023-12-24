@@ -1,0 +1,1 @@
+export { NotFoundPic } from "./NotFoundPic";
